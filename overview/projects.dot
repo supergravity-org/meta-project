@@ -17,7 +17,7 @@ graph [fontsize=10 fontname="Verdana" compound=true,ordering=out];
     <TD ALIGN="LEFT">&nbsp;</TD>
   </TR>
   <TR>
-    <TD ALIGN="LEFT">Every physical model gives posibilities and restrictions. All projects on this graph are based on the <b>BSM-SG</b> model.
+    <TD ALIGN="LEFT">Every physical model gives possibilities and restrictions. All projects on this graph are based on the <b>BSM-SG</b> model.
     </TD>
   </TR>
   <TR>
@@ -25,17 +25,17 @@ graph [fontsize=10 fontname="Verdana" compound=true,ordering=out];
     </TD>
   </TR>
   <TR>
-    <TD ALIGN="LEFT">As every physical model, it gives also restrictions:</TD>
+    <TD ALIGN="LEFT">As every physical model does, it also gives restrictions:</TD>
   </TR>
   <TR>
     <TD ALIGN="LEFT">"Time Machines", "Star Trek Beamer", "Wormholes" or "Warp Drives" as well as singularities become <b>impossible</b> - just to name some.
     </TD>
   </TR>
   <TR>
-    <TD ALIGN="LEFT">Please keep in mind that this graph uses terminology from the model and further contains inventions and</TD>
+    <TD ALIGN="LEFT">Please keep in mind that this graph uses terminology from the model and contains inventions and</TD>
     </TR>
   <TR>
-    <TD ALIGN="LEFT">publications that can not be understood from the Standard Model perspective, but become more clear from the BSM one.    </TD>
+    <TD ALIGN="LEFT">publications that can not be understood from the Standard Model perspective, but become clear from the BSM one.    </TD>
   </TR>
 </TABLE>>
   ]
@@ -91,15 +91,15 @@ subgraph cluster_05 {
  "save_energy_balance"[pos="10,100!",point="10,100!",pin="true", fillcolor="#00ff00",shape="note", style="filled",label=<
 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
   <TR><TD>Save the Climate</TD></TR>
-  <TR><TD><I>We have put the energy balance<BR/>of earth out of order.<BR/>Spontanious nonpredictable positive feedback loops could accelerate<BR/>
-  this progress expotentially. We need technology which will bring<BR/>
-  us back into the safezone (Watts/Meter²)</I></TD></TR>
+  <TR><TD><I>We have put the energy balance<BR/>of earth out of order.<BR/>Spontaneous non-predictable positive feedback loops could accelerate<BR/>
+  this progress exponentially. We need technology which will bring<BR/>
+  us back into the safe-zone (Watts/Meter²)</I></TD></TR>
 </TABLE>>
  ]
  "sustainable_energy"[fillcolor="#00ff00", shape="note", style="filled",label=<
 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
   <TR><TD>Sustainable Energy</TD></TR>
-  <TR><TD><I>We need a cheap, 24x7, environmentally friendly power source<BR/>with very high EROEI (Energy Returned of Energy Invested).<BR/>We may even need to exctract CO2 for saving the climate,<BR/>therefore increasing our energy demand substacially</I></TD></TR>
+  <TR><TD><I>We need a cheap, 24x7, environmentally friendly power source<BR/>with very high EROEI (Energy Returned of Energy Invested).<BR/>We may even need to extract CO2 for saving the climate,<BR/>therefore increasing our energy demand substantially</I></TD></TR>
 </TABLE>>]
  "full_simulation"[shape="note", fillcolor="#00ff00",style="filled", label=<
 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
@@ -109,21 +109,21 @@ subgraph cluster_05 {
     is one of the oldest goals of humanity.<BR/>
     A well designed open-source software will<BR/>
     accelerate human development by a magnitude as<BR/>
-    many expenses in development and research could be avoided.
+    many expenses in development and research can thus be avoided.
   </I></TD></TR>
 </TABLE>>
  ]
   "space_travel"[fillcolor="#00ff00", shape="note", style="filled",label=<
 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
-  <TR><TD>Practical Spacetravel</TD></TR>
+  <TR><TD>Practical Space Travel</TD></TR>
   <TR><TD><I>
-    For humanities long term survival,<BR/>
+    For humanity's long term survival,<BR/>
     interstellar space travel is unavoidable.<BR/>
     Assuming the cosmic background radiation can<BR/>
-    be sufficiently shielded and trip times<BR/>
-    of decades would be feasable is absurd.<BR/>
+    be sufficiently shielded and travel duration<BR/>
+    measured in decades would be feasible is absurd.<BR/>
     The only chance to colonize a foreign body<BR/>
-    is if the travel time can be reduced into <BR/>
+    is when the travel time can be reduced to <BR/>
     several weeks at most.
   </I></TD></TR>
 </TABLE>>]
@@ -141,11 +141,11 @@ subgraph cluster_05 {
  "Scalar Wave Research"[style="filled", fillcolor="#CCAAFF"]
  "Gravity Wave Research"[style="filled", fillcolor="#CCAAFF"]
  "HRM Plasma"[style="filled", fillcolor="#CCAAFF"]
- "Replicate: Parkamov"[style="filled", fillcolor="#CCAAFF"]
+ "Replicate: Parkhomov"[style="filled", fillcolor="#CCAAFF"]
  "Smith Coil"[style="filled,dashed", fillcolor="#CCAAFF"]
  "hrm_power" [style="filled,setlinewidth(3)", fillcolor="#AADDFF", label=<
 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
-  <TR><TD>HF/HV powersupply</TD></TR>
+  <TR><TD>HF/HV power supply</TD></TR>
   <TR><TD><I>Capable of generating<BR/>the very specific waveforms required</I></TD></TR>
 </TABLE>>
  ]
@@ -157,14 +157,14 @@ subgraph cluster_05 {
  "sgizer"[style="filled,setlinewidth(3)", fillcolor="#AADDFF"]
  "pybsm"[style="filled,setlinewidth(3)", fillcolor="#AADDFF"]
  "sunshield"[style="filled,dashed", fillcolor="#AADDFF",label="Earthsaver: Sunshield"]
- "Enhanced Parkamov"[style="dashed,filled", fillcolor="#AADDFF"]
+ "Enhanced Parkhomov"[style="dashed,filled", fillcolor="#AADDFF"]
  "unique_lenr_reactor"[style="dashed,filled", fillcolor="#AADDFF", label="unique, patent free,\nopen source LENR reactor"]
  
  "CL compensation shielding"[style="dashed,filled", fillcolor="#AADDFF"]
 
  // design clear
  //   "Design clear"[style="filled", fillcolor="#AAFFDD"]
- "Hodowance Gravity Wave Detectors"[style="filled,setlinewidth(3)", fillcolor="#AAFFDD"]
+ "Hodowanec Gravity Wave Detectors"[style="filled,setlinewidth(3)", fillcolor="#AAFFDD"]
  "Deep Contact Antenna"[style="filled", fillcolor="#AAFFDD"]
  "Replicate: Hyperwave Antenna"[style="filled", fillcolor="#AAFFDD"]
  
@@ -194,7 +194,7 @@ subgraph cluster_05 {
  "SG Labs" -> "Prototype Laboratory"
  "HV Laboratory" -> "HRM Plasma"
  "HRM Plasma" -> "hrm_power"
- "hrm_power" -> "Optimized 3phase PSU" -> "Space Probe"
+ "hrm_power" -> "Optimized 3-phase PSU" -> "Space Probe"
  "sarg_thruster" -> "Deep Contact Antenna"
  "sarg_thruster" -> "Space Probe"
  "Plasma Actuators" -> "Space Probe"
@@ -215,13 +215,13 @@ subgraph cluster_05 {
 
  "Prototype Laboratory" -> "Scalar Wave Research"
  "Scalar Wave Research" -> "Smith Coil"
- "Scalar Wave Research" -> "tesla coil and derivates"
+ "Scalar Wave Research" -> "Tesla Coil and derivates"
  "Scalar Wave Research" -> "Replicate: Hyperwave Antenna"
  "Scalar Wave Research" -> "Deflector shield"
  "Scalar Wave Research" -> "Experimental Antenna Designs"
  "Scalar Wave Research" -> "Beamforming LW Antenna"
 
- # we can combine the antanna frost principle with a Smith Coil design
+ # we can combine the antenna frost principle with a Smith Coil design
  "Smith Coil" -> "Frozen Smith Coil"
  "antenna_frost" -> "Frozen Smith Coil"
 
@@ -236,11 +236,11 @@ subgraph cluster_05 {
 
 
  "Prototype Laboratory" -> "Gravity Wave Research"
- "Gravity Wave Research" -> "Hodowance Gravity Wave Detectors"
- "Hodowance Gravity Wave Detectors" -> "Deep Contact Antenna"
+ "Gravity Wave Research" -> "Hodowanec Gravity Wave Detectors"
+ "Hodowanec Gravity Wave Detectors" -> "Deep Contact Antenna"
  "Deep Contact Antenna" -> "SETI"
- "Hodowance Gravity Wave Detectors" -> "res: Planet core messurement"
- "Hodowance Gravity Wave Detectors" -> "res: Stelar body messurements"
+ "Hodowanec Gravity Wave Detectors" -> "res: Planet core measurements"
+ "Hodowanec Gravity Wave Detectors" -> "res: Stelar body measurements"
 
  "Prototype Laboratory" -> "antenna_frost"
  "Prototype Laboratory" -> "ZPE"
@@ -248,18 +248,18 @@ subgraph cluster_05 {
  "Prototype Laboratory" -> "Ring Photon Research"
  "Ring Photon Research" -> "Organic sensor module"
 
- "Scalar Wave Research" -> "Enhanced Parkamov"
- "hrm_power" -> "Enhanced Parkamov"
- "ZPE" -> "Replicate: Parkamov"
- "Replicate: Parkamov" -> "Enhanced Parkamov"[label="extra safty requirements", fontcolor="#ff0000"]
- "Enhanced Parkamov" -> "unique_lenr_reactor"
+ "Scalar Wave Research" -> "Enhanced Parkhomov"
+ "hrm_power" -> "Enhanced Parkhomov"
+ "ZPE" -> "Replicate: Parkhomov"
+ "Replicate: Parkhomov" -> "Enhanced Parkhomov"[label="extra safety requirements", fontcolor="#ff0000"]
+ "Enhanced Parkhomov" -> "unique_lenr_reactor"
  "ZPE" -> "Enhanced PdD composites"
  "ZPE" -> "Replicate QEG" -> "Optimized QEG"
  "ZPE" -> "ZPE/D solid state generator"[label="very experimental"]
  "Experimental Components" -> "ZPE/D solid state generator"[label="maybe, under design"]
  "ZPE" -> "Experimental Components"
  "Optimized QEG" -> "sustainable_energy"
- "Enhanced Parkamov" -> "sustainable_energy"
+ "Enhanced Parkhomov" -> "sustainable_energy"
  "unique_lenr_reactor" -> "sustainable_energy"
 
  subgraph cluster_0 {
@@ -269,8 +269,8 @@ subgraph cluster_05 {
   label="Spaceship - Stoyan I\nvery long term project. Capable of Earth -> Mars transit in <= 6 days";
   "Stoyan I Design"[label="Design"]
   "Shielding"[fillcolor="#AADDFF"]
-  "Deflector shield"[label="Deflector shield (Optional)"]
-  "Power supply"
+  "Deflector Shield"[label="Deflector Shield (Optional)"]
+  "Power Supply"
   "Power Generator"
   "Life Support";
  }
@@ -280,7 +280,7 @@ subgraph cluster_05 {
     label="Education"
     rankdir="TB"
     style="dotted";
-    "Video series" -> "V: Problems in the stanard model" -> "V: Basic Structures" -> "V: Protons & Electrons" -> "V: CL Space" -> "V: waves and partices" -> "V: Atoms" -> "V: Molecules" -> "V: Advanced Biology" -> "V: Livecycles of Galaxies"
+    "Video series" -> "V: Problems in the standard model" -> "V: Basic Structures" -> "V: Protons & Electrons" -> "V: CL Space" -> "V: Waves and Particles" -> "V: Atoms" -> "V: Molecules" -> "V: Advanced Biology" -> "V: Lifecycles of Galaxies"
     "Popular book"
  }
 
