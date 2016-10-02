@@ -1,0 +1,314 @@
+digraph Projects {
+ordering=out;
+rankdir=TB
+compound=true
+splines="true";
+nodesep=0.6
+graph [fontsize=10 fontname="Verdana" compound=true,ordering=out];
+
+  subgraph cluster_06 { 
+    label = "Info";
+    info_box [shape=plaintext,label=<
+<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+  <TR>
+    <TD ALIGN="CENTER"><FONT POINT-SIZE="18">This is a high level dependency graph of projects &amp; subprojects of the <b>Supergravity Foundation.</b></FONT></TD>
+  </TR>
+    <TR>
+    <TD ALIGN="LEFT">&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="LEFT">Every physical model gives posibilities and restrictions. All projects on this graph are based on the <b>BSM-SG</b> model.
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="LEFT">The 4 forces of the standard model are derived in the BSM model, as well as <i>c</i> - therefore different possibilities arise.
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="LEFT">As every physical model, it gives also restrictions:</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="LEFT">"Time Machines", "Star Trek Beamer", "Wormholes" or "Warp Drives" as well as singularities become <b>impossible</b> - just to name some.
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="LEFT">Please keep in mind that this graph uses terminology from the model and further contains inventions and</TD>
+    </TR>
+  <TR>
+    <TD ALIGN="LEFT">publications that can not be understood from the Standard Model perspective, but become more clear from the BSM one.    </TD>
+  </TR>
+</TABLE>>
+  ]
+  }
+
+
+  subgraph cluster_04 { 
+    label = "Symbology";
+    /*
+    key [label=<<table border="0" cellpadding="2" cellspacing="0" cellborder="0">
+      <tr><td align="right" port="i1">item 1</td></tr>
+      <tr><td align="right" port="i2">item 2</td></tr>
+      <tr><td align="right" port="i3">item 3</td></tr>
+      <tr><td align="right" port="i4">item 4</td></tr>
+      </table>>]
+    key2 [label=<<table border="0" cellpadding="2" cellspacing="0" cellborder="0">
+      <tr><td port="i1">&nbsp;</td></tr>
+      <tr><td port="i2">&nbsp;</td></tr>
+      <tr><td port="i3">&nbsp;</td></tr>
+      <tr><td port="i4">&nbsp;</td></tr>
+      </table>>]
+    key:i1:e -> key2:i1:w [style=dashed]
+    key:i2:e -> key2:i2:w [color=gray]
+    key:i3:e -> key2:i3:w [color=peachpuff3]
+    key:i4:e -> key2:i4:w [color=turquoise4, style=dotted]
+*/
+  a [shape=plaintext,label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+  <TR>
+    <TD COLSPAN="4" BGCOLOR="#00FF00">Long Term Goals</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR="#CCAAFF">Physical background understood</TD>
+    <TD BGCOLOR="#AADDFF">First design considerations/directions</TD>
+    <TD BGCOLOR="#AAFFDD">Design clear</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR="#FFAABB">Very experimental</TD>
+    <TD BGCOLOR="#FFCCAA">Physical understanding needs research</TD>
+    <TD BGCOLOR="#CCCCCC">Conventional Technology</TD>
+  </TR>
+</TABLE>>
+  ]
+    "Started"[style="filled,setlinewidth(3)"]
+    "Needs research"[style="dashed"]
+    }
+
+
+subgraph cluster_05 {
+ style="dotted";
+ rankdir=TB
+ label = "Long term goals";
+ "save_energy_balance"[pos="10,100!",point="10,100!",pin="true", fillcolor="#00ff00",shape="note", style="filled",label=<
+<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+  <TR><TD>Save the Climate</TD></TR>
+  <TR><TD><I>We have put the energy balance<BR/>of earth out of order.<BR/>Spontanious nonpredictable positive feedback loops could accelerate<BR/>
+  this progress expotentially. We need technology which will bring<BR/>
+  us back into the safezone (Watts/Meter²)</I></TD></TR>
+</TABLE>>
+ ]
+ "sustainable_energy"[fillcolor="#00ff00", shape="note", style="filled",label=<
+<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+  <TR><TD>Sustainable Energy</TD></TR>
+  <TR><TD><I>We need a cheap, 24x7, environmentally friendly power source<BR/>with very high EROEI (Energy Returned of Energy Invested).<BR/>We may even need to exctract CO2 for saving the climate,<BR/>therefore increasing our energy demand substacially</I></TD></TR>
+</TABLE>>]
+ "full_simulation"[shape="note", fillcolor="#00ff00",style="filled", label=<
+<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+  <TR><TD>Full Numeric Simulation</TD></TR>
+  <TR><TD><I>
+    The ability to predict the exact behaviour of matter<BR/>
+    is one of the oldest goals of humanity.<BR/>
+    A well designed open-source software will<BR/>
+    accelerate human development by a magnitude as<BR/>
+    many expenses in development and research could be avoided.
+  </I></TD></TR>
+</TABLE>>
+ ]
+  "space_travel"[fillcolor="#00ff00", shape="note", style="filled",label=<
+<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+  <TR><TD>Practical Spacetravel</TD></TR>
+  <TR><TD><I>
+    For humanities long term survival,<BR/>
+    interstellar space travel is unavoidable.<BR/>
+    Assuming the cosmic background radiation can<BR/>
+    be sufficiently shielded and trip times<BR/>
+    of decades would be feasable is absurd.<BR/>
+    The only chance to colonize a foreign body<BR/>
+    is if the travel time can be reduced into <BR/>
+    several weeks at most.
+  </I></TD></TR>
+</TABLE>>]
+ full_simulation -> sustainable_energy[style=invis,weight=0.1]
+ sustainable_energy -> save_energy_balance[style=invis,weight=0.1]
+ save_energy_balance -> space_travel[style=invis,weight=0.1]
+
+}
+
+ 
+ "Optimized QEG"[label="Optimize QEG\nfor CL parameters"]
+ 
+ // physics clear
+ "ZPE"[style="filled", fillcolor="#CCAAFF"]
+ "Scalar Wave Research"[style="filled", fillcolor="#CCAAFF"]
+ "Gravity Wave Research"[style="filled", fillcolor="#CCAAFF"]
+ "HRM Plasma"[style="filled", fillcolor="#CCAAFF"]
+ "Replicate: Parkamov"[style="filled", fillcolor="#CCAAFF"]
+ "Smith Coil"[style="filled,dashed", fillcolor="#CCAAFF"]
+ "hrm_power" [style="filled,setlinewidth(3)", fillcolor="#AADDFF", label=<
+<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+  <TR><TD>HF/HV powersupply</TD></TR>
+  <TR><TD><I>Capable of generating<BR/>the very specific waveforms required</I></TD></TR>
+</TABLE>>
+ ]
+ "sarg_thruster" [style="filled", fillcolor="#CCAAFF", label="Replicate: SARG Thruster"]
+
+ // first design
+ //     "First design considerations/directions"[style="filled", fillcolor="#AADDFF"]
+ "Blender scripts"[style="filled,setlinewidth(3)", fillcolor="#AADDFF"]
+ "sgizer"[style="filled,setlinewidth(3)", fillcolor="#AADDFF"]
+ "pybsm"[style="filled,setlinewidth(3)", fillcolor="#AADDFF"]
+ "sunshield"[style="filled,dashed", fillcolor="#AADDFF",label="Earthsaver: Sunshield"]
+ "Enhanced Parkamov"[style="dashed,filled", fillcolor="#AADDFF"]
+ "unique_lenr_reactor"[style="dashed,filled", fillcolor="#AADDFF", label="unique, patent free,\nopen source LENR reactor"]
+ 
+ "CL compensation shielding"[style="dashed,filled", fillcolor="#AADDFF"]
+
+ // design clear
+ //   "Design clear"[style="filled", fillcolor="#AAFFDD"]
+ "Hodowance Gravity Wave Detectors"[style="filled,setlinewidth(3)", fillcolor="#AAFFDD"]
+ "Deep Contact Antenna"[style="filled", fillcolor="#AAFFDD"]
+ "Replicate: Hyperwave Antenna"[style="filled", fillcolor="#AAFFDD"]
+ 
+ // experimental designs
+ "antenna_frost"[label="Antenna Frost",style="filled,dashed,striped", fillcolor="#FFAABB;0.5:#AADDFF"]
+ "Ring Photon Research"[style="filled,dashed", fillcolor="#FFAABB"]
+ "ZPE/D solid state generator"[style="filled", fillcolor="#FFAABB"]
+ "Frozen Smith Coil"[style="filled", fillcolor="#FFAABB"]
+ "Experimental Antenna Designs"[style="filled,dashed", fillcolor="#FFAABB"]
+ "Tractor beam"[style="filled,dashed", fillcolor="#FFAABB"]
+ 
+ // needs research
+ // #FFCCAA
+ "Replicate QEG"[style="filled,dashed", fillcolor="#AADDFF"]
+ 
+ // conventional technology
+ "Carbon Capture"[style="filled", fillcolor="#CCCCCC"]
+ 
+ "Stoyan I Design" -> "space_travel" [ltail=cluster_0]
+ 
+ "Plasma Actuators" -> "Stoyan I Design"
+
+ "Stoyan I Design" -> "CL compensation shielding"
+ "Stoyan I Design" -> "Advanced ship designs"
+
+ "SG Labs" -> "HV Laboratory"
+ "SG Labs" -> "Prototype Laboratory"
+ "HV Laboratory" -> "HRM Plasma"
+ "HRM Plasma" -> "hrm_power"
+ "hrm_power" -> "Optimized 3phase PSU" -> "Space Probe"
+ "sarg_thruster" -> "Deep Contact Antenna"
+ "sarg_thruster" -> "Space Probe"
+ "Plasma Actuators" -> "Space Probe"
+ "Space Probe" -> "Stoyan I Design"[ltail=cluster_0]
+
+ "Space Probe" -> "sunshield"
+
+ "hrm_power" -> "sarg_thruster"
+ "sarg_thruster" -> "sunshield"[label="conventional technology"]
+ 
+ "sunshield" -> "save_energy_balance"
+ "sustainable_energy" -> "Carbon Capture"
+ "Carbon Capture" -> "save_energy_balance"
+
+ "HV Laboratory" -> "antenna_frost"
+
+ "antenna_frost" -> "Outcome unclear"[label="experimental"]
+
+ "Prototype Laboratory" -> "Scalar Wave Research"
+ "Scalar Wave Research" -> "Smith Coil"
+ "Scalar Wave Research" -> "tesla coil and derivates"
+ "Scalar Wave Research" -> "Replicate: Hyperwave Antenna"
+ "Scalar Wave Research" -> "Deflector shield"
+ "Scalar Wave Research" -> "Experimental Antenna Designs"
+ "Scalar Wave Research" -> "Beamforming LW Antenna"
+
+ # we can combine the antanna frost principle with a Smith Coil design
+ "Smith Coil" -> "Frozen Smith Coil"
+ "antenna_frost" -> "Frozen Smith Coil"
+
+
+ "Organic sensor module" -> "Advanced Computer Interface"
+ "Scalar Wave Research" -> "Advanced Computer Interface"
+
+ "Smith Coil" -> "Smith Coil: experimental antenna compositions"
+ "Smith Coil" -> "Wireless Energy transfer"
+ "Smith Coil: experimental antenna compositions" -> "Tractor beam"[label="maybe", style="dotted"]
+ "Frozen Smith Coil" -> "Tractor beam"[label="maybe", style="dotted"]
+
+
+ "Prototype Laboratory" -> "Gravity Wave Research"
+ "Gravity Wave Research" -> "Hodowance Gravity Wave Detectors"
+ "Hodowance Gravity Wave Detectors" -> "Deep Contact Antenna"
+ "Deep Contact Antenna" -> "SETI"
+ "Hodowance Gravity Wave Detectors" -> "res: Planet core messurement"
+ "Hodowance Gravity Wave Detectors" -> "res: Stelar body messurements"
+
+ "Prototype Laboratory" -> "antenna_frost"
+ "Prototype Laboratory" -> "ZPE"
+
+ "Prototype Laboratory" -> "Ring Photon Research"
+ "Ring Photon Research" -> "Organic sensor module"
+
+ "Scalar Wave Research" -> "Enhanced Parkamov"
+ "hrm_power" -> "Enhanced Parkamov"
+ "ZPE" -> "Replicate: Parkamov"
+ "Replicate: Parkamov" -> "Enhanced Parkamov"[label="extra safty requirements", fontcolor="#ff0000"]
+ "Enhanced Parkamov" -> "unique_lenr_reactor"
+ "ZPE" -> "Enhanced PdD composites"
+ "ZPE" -> "Replicate QEG" -> "Optimized QEG"
+ "ZPE" -> "ZPE/D solid state generator"[label="very experimental"]
+ "Experimental Components" -> "ZPE/D solid state generator"[label="maybe, under design"]
+ "ZPE" -> "Experimental Components"
+ "Optimized QEG" -> "sustainable_energy"
+ "Enhanced Parkamov" -> "sustainable_energy"
+ "unique_lenr_reactor" -> "sustainable_energy"
+
+ subgraph cluster_0 {
+  style="rounded,dashed,filled"
+  color="#DFDFDF"
+  node [style=filled];
+  label="Spaceship - Stoyan I\nvery long term project. Capable of Earth -> Mars transit in <= 6 days";
+  "Stoyan I Design"[label="Design"]
+  "Shielding"[fillcolor="#AADDFF"]
+  "Deflector shield"[label="Deflector shield (Optional)"]
+  "Power supply"
+  "Power Generator"
+  "Life Support";
+ }
+
+ 
+ subgraph cluster_01 {
+    label="Education"
+    rankdir="TB"
+    style="dotted";
+    "Video series" -> "V: Problems in the stanard model" -> "V: Basic Structures" -> "V: Protons & Electrons" -> "V: CL Space" -> "V: waves and partices" -> "V: Atoms" -> "V: Molecules" -> "V: Advanced Biology" -> "V: Livecycles of Galaxies"
+    "Popular book"
+ }
+
+ subgraph cluster_02 {
+    label="Software";
+    style="dotted"
+    "Blender scripts"
+    "clsim"
+    "sgizer" -> "full_simulation"
+    "BSM designer";
+    "pybsm" -> "Blender scripts";
+}
+
+  "BSM designer" -> "Video series"
+
+  "Blender scripts" -> "Video series"
+  "Blender scripts" -> "sgizer"
+  "Blender scripts" -> "Popular book"
+  "BSM designer" -> "sgizer";
+  "sgizer" -> "BSM designer";
+
+/*
+ subgraph cluster_03 {
+  label="crowdfunding"
+  "V: What the BSM model can bring us & what we do"
+  "V: Problems"
+  "V: State of our planet"
+  "V: Details on the model"
+}
+*/
+}
